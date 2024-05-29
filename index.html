@@ -26,7 +26,7 @@
 </head>
 <body>
     <div id="text">time = money</div>
-    <div id="clock"></div>
+    <div id="clock">Loading...</div>
 
     <script>
         function updateClock() {
@@ -37,7 +37,9 @@
             const ampm = hours >= 12 ? 'PM' : 'AM';
             hours = hours % 12;
             hours = hours ? hours : 12; // the hour '0' should be '12'
-            document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds} ${ampm}`;
+            const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+            document.getElementById('clock').innerText = timeString;
+            console.log('Updated clock:', timeString); // Debugging log
         }
         setInterval(updateClock, 1000);
         updateClock(); // Initial call to set the time immediately
