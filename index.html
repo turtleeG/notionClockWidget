@@ -10,6 +10,12 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #a8d5e2; /* Light pastel blue background */
+            flex-direction: column; /* Arrange content in a column */
+        }
+        #text {
+            font-size: 2em;
+            margin-bottom: 20px; /* Space between text and clock */
         }
         #clock {
             font-size: 3em;
@@ -17,6 +23,7 @@
     </style>
 </head>
 <body>
+    <div id="text">time = money</div>
     <div id="clock"></div>
 
     <script>
@@ -28,7 +35,7 @@
             document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
         }
         setInterval(updateClock, 1000);
-        updateClock(); // initial call to set the time immediately
+        updateClock(); // Initial call to set the time immediately
     </script>
 </body>
 </html>
