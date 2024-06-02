@@ -13,10 +13,10 @@ This project is a simple clock widget designed for Notion. It can be easily embe
 - **CSS**
 
 ## Demo
-Live demo [here](link-to-demo)
+Live demo [here](https://turtleeg.github.io/notionClockWidget/) 🐋
 
 ## Installation and Usage
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/notion-clock-widget.git
+   git clone https://github.com/turtleeG/notionClockWidget.git
